@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*navigation displays*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li {
+    text-decoration: none;
+    color: #333437;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333437;
+    margin: 0px 8px 8px 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  /*css for the two different lists on top*/
+  .firstlist {
+    margin-left: 15px;
+    padding: 0;
+  }
+  
+  .apps {
+    margin: 10px;
+    height: 18px;
+  }
+  
+  .signin {
+    background-color: #1c72e8;
+    border-radius: 3px;
+    padding: 10px 25px;
+    color: #ffffff;
+    margin-right: 20px;
+  }
+  
+  .signin:hover {
+    text-decoration: none;
+  }
+  
+  .google {
+    display: block;
+    height: 90px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  .mag-glass {
+    height: 15px;
+     margin-left: 15px;
+  }
+  
+  .voice-search {
+    height: 20px;
+    margin-left: 15px;
+  }
+  .image-search {
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  /*different sections to do the search bar layout, probably a smarter way but didn't want to use divs*/
+  .search-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-input {
+    width: 500px;
+    height: 25px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-button, .lucky-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    margin: 10px 5px 5px 5px;
+    border-radius: 5px;
+  }
+  
+  .search-button:hover {
+    border: 1px solid #dadce0;
+  }
+  
+  /*learned to set the width to 100% so it doesn't get bunched up on the left*/
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /*settings list element wasn't linked to anything so it needed some separate margins to make it fit better */
+  .settings {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
