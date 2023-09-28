@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Google</title>
+  <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png">
+  <!-- links the javascript -->
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <!-- two separate unordered lists to have them follow different css and go to respective sides,
+      links to respective google pages-->
+      <ul class="firstlist">
+        <li><a
+            href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        </li>
+        <li><a
+            href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+        </li>
+      </ul>
+      <ul>
+        <li><a
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=AYZoVhf_KZ4fYeu6E8dwwKGkkIw5yUrkJyxzU2WzXlEbkbEPGVkKvRakQ2XORKj4g9Fl5HLuElmG&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1727676955%3A1695222831234931&theme=glif">Gmail</a>
+        </li>
+        <li><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
+        <li><a href="https://about.google/products/"><img class="apps"
+              src="https://cdn.icon-icons.com/icons2/1129/PNG/512/buttonsymbolofninedots_80014.png"
+              alt="Google apps"></a></li>
+        <li><a class="signin"
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F%3Fpccc%3D1&ec=GAZAmgQ&hl=en&ifkv=AYZoVhf6EWFbiIFX-5CwK79z4kuiRjHE1vhAvWqRCOR8OQa4mUlG8rmJrc7HgSyIK_qoyG7j7uaifg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1292101637%3A1695223282904771&theme=glif">Sign
+            in</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- html for the main feature, the google logo, search bar, and buttons-->
+  <main>
+    <img class="google" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="Google">
+    <section class="search-container">
+      <section class="search-bar">
+        <img class="mag-glass"
+          src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png"
+          alt="search">
+        <input class="search-input" id="search-input" type="text">
+        <img class="voice-search"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/800px-Google_mic.svg.png"
+          alt="voice search">
+        <img class="image-search"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/640px-Google_Lens_Icon.svg.png"
+          alt="image search">
+      </section>
+    </section>
+    <section class="buttons">
+      <!--used a onclick attribute to call the search function-->
+      <button class="search-button" onclick=search()>Google Search</button>
+      <button class="lucky-button">I'm Feeling Lucky</button>
+    </section>
+  </main>
+  <!--the bottom navigation bar with links to different google sites -->
+  <footer>
+    <nav class="nav">
+      <ul>
+        <li><a
+            href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        </li>
+        <li><a
+            href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
+        </li>
+        <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+        <li><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+        <li class="settings">Settings</li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
